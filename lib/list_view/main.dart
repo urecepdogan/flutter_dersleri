@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: [
           Expanded(
-            child: RefreshIndicator(
+            child: RefreshIndicator( // ekranı aşağı çekerek listview in yenilenmesini sağlamak için kullandık.
               onRefresh: () async {
                 return await Future.delayed(const Duration(seconds: 1));
               },
